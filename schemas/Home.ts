@@ -1,13 +1,18 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'post',
-  title: 'Post',
+  name: 'paginas',
+  title: 'Paginas',
   type: 'document',
   fields: [
     defineField({
       name: 'title',
       title: 'Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'name',
+      title: 'Name',
       type: 'string',
     }),
     defineField({
@@ -20,39 +25,28 @@ export default defineType({
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'title',
+        source: 'name',
         maxLength: 96,
       },
     }),
     defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
+      name: 'job',
+      title: 'Job',
+      type: 'string',
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'banner',
+      title: 'Banner',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
+      name: 'Social',
+      title: 'Social',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
+      of:[{type: 'image'}]
     }),
   ],
 
