@@ -44,11 +44,12 @@ export default defineType({
     }),
     defineField({
       name: 'Social',
-      title: 'Social',
+      title: 'social',
       type: 'array',
-      of:[{type: 'image'}]
-    }),
-  ],
+      of:[{type:'SocialItems'}]
+      })
+    ]
+  ,
 
   preview: {
     select: {
