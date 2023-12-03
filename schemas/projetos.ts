@@ -16,6 +16,11 @@ export default defineType({
       type: 'text',
     }),
     defineField({
+      name: 'gitLink',
+      title: 'GitLink',
+      type: 'string',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -34,6 +39,14 @@ export default defineType({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
+      fields: [
+        {
+          name: 'altText',
+          title: 'Texto Alternativo',
+          type: 'string',
+          description: 'Descreva o conteúdo da imagem para acessibilidade.',
+        },
+      ],
       options: {
         hotspot: true,
       },

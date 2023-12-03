@@ -34,6 +34,14 @@ export default defineType({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
+      fields: [
+        {
+          name: 'altText',
+          title: 'Texto Alternativo',
+          type: 'string',
+          description: 'Descreva o conteúdo da imagem para acessibilidade.',
+        },
+      ],
       options: {
         hotspot: true,
       },
