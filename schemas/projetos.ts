@@ -25,6 +25,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'gitLink',
+      title: 'GitLink',
+      type: 'string',
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',

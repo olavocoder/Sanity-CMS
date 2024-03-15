@@ -25,6 +25,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'youTube',
+      title: 'YouTube',
+      type: 'string',
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
@@ -53,6 +58,12 @@ export default defineType({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'postsRelateds',
+      title: 'PostsRelateds',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'post'}}],
     }),
   ],
 
