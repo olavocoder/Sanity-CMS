@@ -19,11 +19,31 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'logoFooter',
+      title: 'LogoFooter',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    
+    defineField({
       name: 'Menu',
       title: 'menu',
       type: 'array',
       of:[{type:'menu'}]
-      })
+      }),
+    defineField({
+      name: 'SocialFooter',
+      title: 'socialFooter',
+      type: 'array',
+      of:[{type:'SocialItems'}]
+      }),
+      defineField({
+        name: 'policyText',
+        title: 'PolicyText',
+        type: 'text',
+      }),
     ],
     preview: {
     select: {
