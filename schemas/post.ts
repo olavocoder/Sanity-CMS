@@ -65,6 +65,12 @@ export default defineType({
       type: 'array',
       of: [{type: 'reference', to: {type: 'post'}}],
     }),
+    defineField({
+      name: 'sidebarCards',
+      title: 'SidebarCards',
+      type: 'array',
+      of: [{type: 'SidebarItems'}],
+    }),
   ],
 
   preview: {
