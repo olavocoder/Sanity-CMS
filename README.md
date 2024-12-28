@@ -9,7 +9,3 @@ Now you can do the following things:
 - [Read the blog post about this template](https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=readme)
 - [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
 - [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
-https://lxpq608x.api.sanity.io/v2023-08-01/graphql/production/default
-
-
-skD83toCkufC1DvrLsvDI4WBh9SKtte9yUj7wbpKDTGRLQPolKpYwCNYnjecQF8tHOJzh4YX77HaY8RqKoecPqFMVqdsEmODZuO0vu5hca6sGL6AYQQDpP6R0vVV9AxHyIzKeXrFPjTpj5LshSJ3nuN5QwSx15yLf7hXS3UsqqWu7Y5yGav4
