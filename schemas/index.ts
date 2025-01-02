@@ -10,5 +10,6 @@ import socialItems from './socialItems'
 import geralBlog from './geralBlog'
 import sidebarCards from './sidebarCards'
 import newsletter from './newsletter'
+import banner from './banner'
 
-export const schemaTypes = [sidebarCards, newsletter, socialItems, Home, skills, post, author, category, projetos, tecnologias, blockContent, geralBlog]
+export const schemaTypes = [banner, sidebarCards, newsletter, socialItems, Home, skills, post, author, category, projetos, tecnologias, blockContent, geralBlog]

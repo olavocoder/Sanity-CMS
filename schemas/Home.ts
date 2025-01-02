@@ -61,7 +61,13 @@ export default defineType({
       title: 'social',
       type: 'array',
       of:[{type:'SocialItems'}]
-      })
+      }),
+      defineField({
+        name: 'banners',
+        title: 'Banners',
+        type: 'array',
+        of: [{type: 'reference', to: {type: 'banner'}}],
+      }),
     ]
   ,
 
