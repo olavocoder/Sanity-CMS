@@ -69,7 +69,7 @@ export default defineType({
       name: 'sidebarCards',
       title: 'SidebarCards',
       type: 'array',
-      of: [{type: 'SidebarItems'}],
+      of: [{type: 'reference', to: {type: 'banner'}}],
     }),
   ],
 
