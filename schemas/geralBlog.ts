@@ -31,8 +31,8 @@ export default defineType({
       name: 'Menu',
       title: 'menu',
       type: 'array',
-      of:[{type:'menu'}]
-      }),
+      of: [{type: 'reference', to: {type: 'category'}}],
+    }),
     defineField({
       name: 'SocialFooter',
       title: 'socialFooter',

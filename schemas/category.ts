@@ -24,5 +24,5 @@ export default defineType({
         maxLength: 96,
       },
     }),
-  ],
+  ]
 })

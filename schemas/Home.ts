@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'active',
+      title: 'Active',
+      type: 'boolean',
+      initialValue: false
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
@@ -37,6 +43,14 @@ export default defineType({
     defineField({
       name: 'banner',
       title: 'Banner',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'background',
+      title: 'Background',
       type: 'image',
       options: {
         hotspot: true,
