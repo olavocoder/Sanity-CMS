@@ -44,6 +44,12 @@ export default defineType({
         title: 'PolicyText',
         type: 'text',
       }),
+      defineField({
+        name: 'sidebarCards',
+        title: 'SidebarCards',
+        type: 'array',
+        of: [{type: 'reference', to: {type: 'banner'}}],
+      }),
     ],
     preview: {
     select: {
